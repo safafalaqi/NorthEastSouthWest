@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,134 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="North_East_South_West" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ha-BT-aw5">
+                                <rect key="frame" x="161" y="50" width="92" height="38"/>
+                                <color key="backgroundColor" red="0.88851463789999996" green="0.47827780250000002" blue="0.4902509451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="location.north.fill" catalog="system" title="North">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="directionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zJw-fP-jkb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vV-f9-8ho">
+                                <rect key="frame" x="342" y="429" width="62" height="38"/>
+                                <color key="backgroundColor" red="0.88851463789999996" green="0.47827780250000002" blue="0.4902509451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="East">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
+                                        <real key="value" value="-1.5700000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="directionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CUK-ne-4Aa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBq-mK-efm">
+                                <rect key="frame" x="10" y="429" width="69" height="38"/>
+                                <color key="backgroundColor" red="0.88851463789999996" green="0.47827780250000002" blue="0.4902509451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="West">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
+                                        <real key="value" value="1.5700000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="directionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAl-TY-T5a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgv-8C-7I4">
+                                <rect key="frame" x="169" y="838" width="76" height="38"/>
+                                <color key="backgroundColor" red="0.88851463789999996" green="0.47827780250000002" blue="0.4902509451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="South">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="directionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="06z-fE-Fsw"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.96777814626693726" green="0.8596646286081312" blue="0.83449129497091112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8vV-f9-8ho" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="83B-Ph-FoZ"/>
+                            <constraint firstItem="PBq-mK-efm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8O7-rI-u9D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8vV-f9-8ho" secondAttribute="trailing" constant="10" id="C4o-wv-duL"/>
+                            <constraint firstItem="8Ha-BT-aw5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="FOT-xp-rNR"/>
+                            <constraint firstAttribute="bottom" secondItem="qgv-8C-7I4" secondAttribute="bottom" constant="20" id="UYk-lq-fFT"/>
+                            <constraint firstItem="PBq-mK-efm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="aDA-sh-mEL"/>
+                            <constraint firstItem="qgv-8C-7I4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nRq-m4-tRy"/>
+                            <constraint firstItem="8Ha-BT-aw5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y7V-QX-Ifr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="GVy-o3-2Kl" kind="presentation" identifier="DirectionNavigation" id="Yf8-l5-v6c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+        <!--Direction View Controller-->
+        <scene sceneID="jPs-4J-W7e">
+            <objects>
+                <viewController id="GVy-o3-2Kl" customClass="DirectionViewController" customModule="North_East_South_West" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uwW-9Y-MvA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yK-im-uNa">
+                                <rect key="frame" x="132" y="371" width="150" height="100"/>
+                                <color key="backgroundColor" red="0.88851463789999996" green="0.47827780250000002" blue="0.4902509451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="G5y-DE-YeD"/>
+                                    <constraint firstAttribute="width" constant="150" id="PYj-iw-22E"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Direction">
+                                    <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="26"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="fL5-Gp-DoG" kind="unwind" unwindAction="unwind:" id="vi8-vc-phn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eYL-JN-3uF"/>
+                        <color key="backgroundColor" red="0.96894913910000002" green="0.85828131439999999" blue="0.83410811419999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1yK-im-uNa" firstAttribute="centerY" secondItem="uwW-9Y-MvA" secondAttribute="centerY" id="9lO-Mx-jgn"/>
+                            <constraint firstItem="1yK-im-uNa" firstAttribute="centerX" secondItem="uwW-9Y-MvA" secondAttribute="centerX" id="ymJ-uY-LT8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="directionLabel" destination="1yK-im-uNa" id="aQz-QH-5TP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDg-yY-a6J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="fL5-Gp-DoG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="803" y="110"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="location.north.fill" catalog="system" width="108" height="128"/>
+    </resources>
 </document>

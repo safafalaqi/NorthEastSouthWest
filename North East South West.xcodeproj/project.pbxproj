@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		854B80E6276519B3002EC43C /* DirectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854B80E5276519B3002EC43C /* DirectionViewController.swift */; };
 		857081A42763F6F100D431B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857081A32763F6F100D431B8 /* AppDelegate.swift */; };
 		857081A62763F6F100D431B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857081A52763F6F100D431B8 /* SceneDelegate.swift */; };
 		857081A82763F6F100D431B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857081A72763F6F100D431B8 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		854B80E5276519B3002EC43C /* DirectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionViewController.swift; sourceTree = "<group>"; };
 		857081A02763F6F100D431B8 /* North East South West.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "North East South West.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		857081A32763F6F100D431B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		857081A52763F6F100D431B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				857081AC2763F6F500D431B8 /* Assets.xcassets */,
 				857081AE2763F6F500D431B8 /* LaunchScreen.storyboard */,
 				857081B12763F6F500D431B8 /* Info.plist */,
+				854B80E5276519B3002EC43C /* DirectionViewController.swift */,
 			);
 			path = "North East South West";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				854B80E6276519B3002EC43C /* DirectionViewController.swift in Sources */,
 				857081A82763F6F100D431B8 /* ViewController.swift in Sources */,
 				857081A42763F6F100D431B8 /* AppDelegate.swift in Sources */,
 				857081A62763F6F100D431B8 /* SceneDelegate.swift in Sources */,

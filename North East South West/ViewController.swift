@@ -14,6 +14,21 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func directionPressed(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "DirectionNavigation", sender: sender.titleLabel?.text!)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! DirectionViewController
+        let d = sender as? String
+        destination.direction = d
+    }
+    
+    //unwind method must be in the destination view controller
+    @IBAction func unwind( _ seg: UIStoryboardSegue) {
+    }
 
+    
 }
 
